@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    background-color: #008080;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+.news-headlines ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news-headlines ul li {
+    margin-bottom: 10px;
+}
+
+.news-headlines ul li a {
+    color: #008080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#articles-container img {
+    max-height: 20vh;
+    width: auto;
+}
+
+article {
+    width: calc(33.33% - 20px); /* 33.33% breedte voor elk artikel met 20px ruimte tussen de artikelen */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+article img {
+    width: 25%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.social-buttons button {
+    margin-right: 10px;
+}
+
+.comments {
+    background-color: white;
+    padding: 20px;
+}
+
+.comments h3 {
+    margin-top: 0;
+}
+
+#commentForm {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#commentInput {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#commentList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#commentList li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+footer {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.home-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+}
+
+.artikel {
+    min-width: 100vw;
+}

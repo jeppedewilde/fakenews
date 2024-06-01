@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thierry Baudet en de Platte Aarde - Fake News Today</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="home-icon.png" alt="Home" class="home-icon"></a>
+        <h1>Fake News Today</h1>
+        <nav>
+            <ul>
+                <!-- Hier kunnen eventueel meer navigatielinks worden toegevoegd -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="artikel">
+            <h2>Linda de Mol Start Nieuwe Carrière als Professionele Gamer</h2>
+            <img src="images/linda_def.jpeg" alt="Linda de Mol">
+            <p>In een onverwachte wending heeft Linda de Mol, een van de meest bekende gezichten van de Nederlandse televisie, aangekondigd dat zij haar carrière in de entertainmentindustrie opgeeft om professioneel gamer te worden. Linda verklaarde dat zij altijd al een passie heeft gehad voor gaming en nu de sprong wil wagen naar de competitieve wereld van eSports.
+
+                Tijdens een speciaal georganiseerde persconferentie deelde Linda haar plannen met het publiek. "Ik heb jarenlang genoten van mijn werk op televisie, maar ik voel dat het tijd is voor een nieuwe uitdaging," zei ze. "Gaming is altijd een hobby van mij geweest, en ik wil laten zien dat vrouwen van alle leeftijden succesvol kunnen zijn in de eSports-wereld."
+                
+                Linda onthulde ook dat ze een team heeft samengesteld van getalenteerde gamers en dat ze zich gaan inschrijven voor internationale toernooien. "We zijn er klaar voor om de wereld te laten zien dat we serieus zijn," zei ze zelfverzekerd.
+                
+                De aankondiging veroorzaakte meteen een storm van reacties op social media. Onder de hashtag #LindaGamer deelden mensen hun verbazing en steun. "Ik had nooit gedacht dat ik Linda de Mol zou zien als een gamer, maar dit is geweldig," schreef een fan op Twitter.
+                
+                Hoewel sommigen sceptisch waren, waren anderen enthousiast over de nieuwe wending in Linda's carrière. "Het is geweldig om te zien hoe iemand met zoveel ervaring in de media een nieuw pad inslaat," zei een vooraanstaand eSports-commentator. "Ze kan een inspiratie zijn voor veel anderen."
+                
+                Linda zelf lijkt niet van plan om terug te kijken. "Ik weet dat het een grote stap is, maar ik ben klaar voor dit avontuur," zei ze. "Gaming is meer dan alleen een spel; het is een manier van leven. Ik ben vastberaden om te slagen."
+                
+                Met haar nieuwe team gaat Linda de komende maanden hard trainen en voorbereiden op hun eerste toernooi. Of ze net zo succesvol zal zijn in de eSports-wereld als op televisie, zal de tijd leren. Eén ding is zeker: Linda de Mol is klaar om de wereld van gaming te veroveren.</p>
+            <div class="social-buttons">
+                <button onclick="likeArticle()">Like (<span id="likeCount">0</span>)</button>
+                <button onclick="dislikeArticle()">Dislike (<span id="dislikeCount">0</span>)</button>
+                <button onclick="shareArticle()">Deel op Social Media</button>
+            </div>
+        </article>
+        <section class="comments">
+            <h3>Reacties</h3>
+            <form id="commentForm" onsubmit="addComment(event)">
+                <input type="text" id="commentInput" placeholder="Schrijf een reactie..." required>
+                <button type="submit">Plaatsen</button>
+            </form>
+            <ul id="commentList">
+                <!-- Eerder geplaatste reacties -->
+                <li>Jan: "Dit kan niet serieus zijn!"</li>
+                <li>Marie: "Ongelooflijk, hoe komt hij erbij?"</li>
+                <li>Pieter: "Ik heb hier zo om gelachen!"</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fake News Today. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>

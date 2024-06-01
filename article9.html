@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thierry Baudet en de Platte Aarde - Fake News Today</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="home-icon.png" alt="Home" class="home-icon"></a>
+        <h1>Fake News Today</h1>
+        <nav>
+            <ul>
+                <!-- Hier kunnen eventueel meer navigatielinks worden toegevoegd -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="artikel">
+            <h2>Mark Rutte Doet Mee aan Realityshow</h2>
+            <img src="images/mark_def.jpeg" alt="Mark Rutte">
+            <p>In een onverwachte zet heeft de Nederlandse premier Mark Rutte bekendgemaakt dat hij zal deelnemen aan een nieuwe realityshow waarin hij samen met andere politici in een huis zal wonen en verschillende uitdagingen zal aangaan. De show, die "Politiek Binnenste Buiten" heet, is bedoeld om de menselijke kant van politici te laten zien.
+
+                Tijdens een persconferentie legde Rutte uit waarom hij besloot mee te doen. "Politiek kan vaak afstandelijk en serieus lijken," zei hij. "Ik wil mensen laten zien dat we ook gewone mensen zijn met humor en emoties. Deze show biedt een unieke kans om dat te doen."
+                
+                De show zal worden uitgezonden op prime time televisie en belooft een mix van komische en serieuze momenten te bieden. Politici zullen deelnemen aan dagelijkse taken, zoals koken en schoonmaken, en ook aan uitdagende opdrachten die hun samenwerking en doorzettingsvermogen op de proef stellen.
+                
+                De aankondiging veroorzaakte meteen een storm van reacties op social media. Onder de hashtag #RutteReality deelden mensen hun verbazing en enthousiasme. "Ik kan niet wachten om Mark Rutte te zien afwassen," schreef een Twitter-gebruiker. "Dit wordt het beste politieke entertainment ooit."</p>
+            <div class="social-buttons">
+                <button onclick="likeArticle()">Like (<span id="likeCount">0</span>)</button>
+                <button onclick="dislikeArticle()">Dislike (<span id="dislikeCount">0</span>)</button>
+                <button onclick="shareArticle()">Deel op Social Media</button>
+            </div>
+        </article>
+        <section class="comments">
+            <h3>Reacties</h3>
+            <form id="commentForm" onsubmit="addComment(event)">
+                <input type="text" id="commentInput" placeholder="Schrijf een reactie..." required>
+                <button type="submit">Plaatsen</button>
+            </form>
+            <ul id="commentList">
+                <!-- Eerder geplaatste reacties -->
+                <li>Jan: "Dit kan niet serieus zijn!"</li>
+                <li>Marie: "Ongelooflijk, hoe komt hij erbij?"</li>
+                <li>Pieter: "Ik heb hier zo om gelachen!"</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fake News Today. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>

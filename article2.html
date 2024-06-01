@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thierry Baudet en de Platte Aarde - Fake News Today</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="home-icon.png" alt="Home" class="home-icon"></a>
+        <h1>Fake News Today</h1>
+        <nav>
+            <ul>
+                <!-- Hier kunnen eventueel meer navigatielinks worden toegevoegd -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="artikel">
+            <h2>Kees van der Spek Betrapt op Chocolade Complot</h2>
+            <img src="images/kees_def.jpeg" alt="Kees van der spek">
+            <p>In een bizar schandaal dat de Nederlandse media stormenderhand heeft veroverd, is Kees van der Spek, een geliefde TV-presentator en misdaadjournalist, beschuldigd van het stelen van chocolade uit een bekende chocoladewinkel en het vervolgens verkopen onder zijn eigen merknaam.
+
+                Het nieuws kwam aan het licht toen beveiligingsbeelden opdoken waarop te zien is dat iemand die sterk op Kees lijkt, dozen met luxe chocolade wegdraagt uit een magazijn. De chocoladewinkel, beroemd om zijn ambachtelijke creaties, merkte al snel dat er een significante hoeveelheid chocolade ontbrak uit hun voorraad.
+                
+                Tijdens een persconferentie ontkende Kees de beschuldigingen hevig. "Dit is absoluut absurd. Ik heb niets met deze diefstal te maken," verklaarde hij. "Iemand probeert duidelijk mijn naam te schaden."
+                
+                Desondanks konden internetgebruikers niet anders dan lachen om de situatie. Onder de hashtag #ChocoCrimePeter deelden mensen talloze grappen en memes, waarbij Kees werd afgebeeld als een soort chocoladekoning met een kroon van bonbons.
+                
+                "Het lijkt erop dat Kees van zijn eigen snoep heeft geproefd," grapte een Twitter-gebruiker. "Misschien is hij van plan om een nieuwe misdaadserie te starten: CSI Chocolade."
+                
+                De reacties bleven niet alleen beperkt tot social media. Verschillende talkshows en comedyprogramma's in Nederland besteedden aandacht aan het schandaal, vaak met hilarische sketches waarin Kees werd nagespeeld als een chocolade dief.
+                
+                Ondanks de ernstige beschuldigingen lijkt Peter zelf de humor van de situatie in te zien. "Ik ben blij dat mensen erom kunnen lachen," zei hij in een interview. "Maar ik verzeker jullie, dit is een misverstand. Ik heb altijd al een zwak gehad voor zoetigheid, maar dit gaat te ver."
+                
+                Of Kees van der Spek daadwerkelijk schuldig is aan het chocoladecomplot, zal nog moeten blijken. Voor nu blijft het een van de meest besproken en komische schandalen van het jaar.</p>
+            <div class="social-buttons">
+                <button onclick="likeArticle()">Like (<span id="likeCount">0</span>)</button>
+                <button onclick="dislikeArticle()">Dislike (<span id="dislikeCount">0</span>)</button>
+                <button onclick="shareArticle()">Deel op Social Media</button>
+            </div>
+        </article>
+        <section class="comments">
+            <h3>Reacties</h3>
+            <form id="commentForm" onsubmit="addComment(event)">
+                <input type="text" id="commentInput" placeholder="Schrijf een reactie..." required>
+                <button type="submit">Plaatsen</button>
+            </form>
+            <ul id="commentList">
+                <!-- Eerder geplaatste reacties -->
+                <li>Jan: "Dit kan niet serieus zijn!"</li>
+                <li>Marie: "Ongelooflijk, hoe komt hij erbij?"</li>
+                <li>Pieter: "Ik heb hier zo om gelachen!"</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fake News Today. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>

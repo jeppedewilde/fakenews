@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thierry Baudet en de Platte Aarde - Fake News Today</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="home-icon.png" alt="Home" class="home-icon"></a>
+        <h1>Fake News Today</h1>
+        <nav>
+            <ul>
+                <!-- Hier kunnen eventueel meer navigatielinks worden toegevoegd -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="artikel">
+            <h2>DJ Tiësto Biecht Contact met Buitenaardse Wezens op</h2>
+            <img src="images/tiesto_def.png" alt="DJ Tiësto">
+            <p>In een opzienbarende onthulling tijdens een late-night talkshow heeft DJ Tiësto beweerd dat hij in contact staat met buitenaardse wezens die hem helpen bij het creëren van zijn muziek. De beroemde DJ vertelde aan de verbijsterde gastheer dat de aliens hem 's nachts bezoeken en hem inspireren met hun anderewereldse muzikale ideeën.
+
+                "Het begon allemaal een paar jaar geleden," legde Tiësto uit. "Ik was aan het werk in mijn studio toen ik plotseling een helder licht zag en een figuur voor me verscheen. Hij vertelde me dat hij van een verre planeet kwam en dat hij hier was om me te helpen mijn muziek naar een hoger niveau te tillen."
+                
+                De talkshow-host, zichtbaar sceptisch, vroeg Tiësto of hij zeker wist dat dit geen droom was. "Absoluut niet," antwoordde Tiësto. "Ze komen regelmatig langs en geven me ideeën voor nieuwe tracks. Sommige van mijn grootste hits zijn eigenlijk door hen geïnspireerd."
+                
+                De uitspraken van Tiësto veroorzaakten onmiddellijk een golf van reacties op social media. Onder de hashtag #AlienDJ deelden mensen hun verbazing en hilariteit. "Dit verklaart waarom zijn muziek zo 'uit deze wereld' klinkt," grapte een Twitter-gebruiker.
+                
+                Niet alleen fans, maar ook collega's uit de muziekindustrie reageerden op Tiësto's bekentenis. "Misschien moet ik ook maar eens naar de sterren kijken voor inspiratie," tweette een bekende DJ.
+                
+                Critici vroegen zich af of Tiësto's uitspraken serieus genomen moesten worden of dat het een slimme PR-stunt was om zijn nieuwe album te promoten. "Wat het ook is, het heeft zeker voor opschudding gezorgd," zei een muziekrecensent.
+                
+                Tiësto zelf bleef kalm onder alle aandacht. "Ik weet dat het moeilijk te geloven is," zei hij in een vervolginterview. "Maar ik heb geen reden om hierover te liegen. De muziek spreekt voor zich."
+                
+                Ondanks de controverse blijft Tiësto een van de meest invloedrijke DJ's ter wereld. Of zijn buitenaardse vrienden hem nog meer hits zullen bezorgen, valt nog te bezien.</p>
+            <div class="social-buttons">
+                <button onclick="likeArticle()">Like (<span id="likeCount">0</span>)</button>
+                <button onclick="dislikeArticle()">Dislike (<span id="dislikeCount">0</span>)</button>
+                <button onclick="shareArticle()">Deel op Social Media</button>
+            </div>
+        </article>
+        <section class="comments">
+            <h3>Reacties</h3>
+            <form id="commentForm" onsubmit="addComment(event)">
+                <input type="text" id="commentInput" placeholder="Schrijf een reactie..." required>
+                <button type="submit">Plaatsen</button>
+            </form>
+            <ul id="commentList">
+                <!-- Eerder geplaatste reacties -->
+                <li>Jan: "Dit kan niet serieus zijn!"</li>
+                <li>Marie: "Ongelooflijk, hoe komt hij erbij?"</li>
+                <li>Pieter: "Ik heb hier zo om gelachen!"</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fake News Today. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>

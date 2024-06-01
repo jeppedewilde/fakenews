@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thierry Baudet en de Platte Aarde - Fake News Today</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="home-icon.png" alt="Home" class="home-icon"></a>
+        <h1>Fake News Today</h1>
+        <nav>
+            <ul>
+                <!-- Hier kunnen eventueel meer navigatielinks worden toegevoegd -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="artikel">
+            <h2>André Rieu Speelt Live Concert voor Koeien</h2>
+            <img src="images/andre_def.jpeg" alt="André van Duin">
+            <p>In een hartverwarmende en tegelijkertijd hilarische gebeurtenis heeft de beroemde Nederlandse violist André Rieu een speciaal concert gegeven voor een kudde koeien op een boerderij in Limburg. Rieu, bekend om zijn grootse en meeslepende concerten, besloot deze keer een intiem optreden te verzorgen voor zijn viervoetige fans.
+
+                Tijdens een interview vertelde Rieu waarom hij dit deed. "Ik heb altijd al een speciale band gehad met dieren, en deze koeien zijn mijn trouwste publiek," zei hij glimlachend. "Elke keer als ik hier in de buurt kom, zie ik ze blij reageren op mijn muziek. Dit concert is mijn manier om hen te bedanken."
+                
+                Het concert vond plaats op een zonnige middag, waarbij Rieu zijn viool speelde te midden van de grazende koeien. Volgens de boer, die de koeien bezit, reageerden de dieren enthousiast op de muziek. "Ze waren echt aan het genieten," zei hij. "Je kon zien dat ze het prachtig vonden."
+                
+                Beelden van het concert gingen al snel viraal op social media. Onder de hashtag #RieuVoorKoeien deelden mensen video's en foto's van het optreden. "André Rieu weet echt hoe hij een publiek moet bespelen, ongeacht of ze twee of vier benen hebben," grapte een Twitter-gebruiker.
+                
+                Muziekliefhebbers en dierenliefhebbers reageerden positief op het nieuws. "Dit is waarom André Rieu een legende is," schreef een fan op Facebook. "Hij weet hoe hij mensen en dieren blij moet maken met zijn muziek."
+                
+                André Rieu zelf was blij met het resultaat. "Het was een magische ervaring," zei hij na afloop van het concert. "De koeien waren zo rustig en aandachtig. Dit is een van de mooiste optredens die ik ooit heb gegeven."
+                
+                Of dit concert eenmalig was of dat Rieu van plan is om meer optredens voor dieren te geven, blijft nog een vraag. Voor nu heeft hij in ieder geval de harten van zowel mensen als koeien veroverd.</p>
+            <div class="social-buttons">
+                <button onclick="likeArticle()">Like (<span id="likeCount">0</span>)</button>
+                <button onclick="dislikeArticle()">Dislike (<span id="dislikeCount">0</span>)</button>
+                <button onclick="shareArticle()">Deel op Social Media</button>
+            </div>
+        </article>
+        <section class="comments">
+            <h3>Reacties</h3>
+            <form id="commentForm" onsubmit="addComment(event)">
+                <input type="text" id="commentInput" placeholder="Schrijf een reactie..." required>
+                <button type="submit">Plaatsen</button>
+            </form>
+            <ul id="commentList">
+                <!-- Eerder geplaatste reacties -->
+                <li>Jan: "Dit kan niet serieus zijn!"</li>
+                <li>Marie: "Ongelooflijk, hoe komt hij erbij?"</li>
+                <li>Pieter: "Ik heb hier zo om gelachen!"</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fake News Today. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>

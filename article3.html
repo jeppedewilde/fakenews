@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thierry Baudet en de Platte Aarde - Fake News Today</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="home-icon.png" alt="Home" class="home-icon"></a>
+        <h1>Fake News Today</h1>
+        <nav>
+            <ul>
+                <!-- Hier kunnen eventueel meer navigatielinks worden toegevoegd -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="artikel">
+            <h2>Yolanthe Cabau Verwerpt Zwaartekracht</h2>
+            <img src="images/yolanthe_def.jpeg" alt="Yolanthe Cabau">
+            <p>In een interview dat viraal is gegaan, heeft de beroemde Nederlandse actrice Yolanthe Cabau verklaard dat zij niet gelooft in zwaartekracht. In plaats daarvan denkt ze dat objecten naar beneden vallen omdat ze dat "willen", wat leidde tot een storm van reacties op social media.
+
+                Yolanthe maakte haar opmerking tijdens een promotie-interview voor haar nieuwste film. "Ik heb altijd al het gevoel gehad dat zwaartekracht niet echt is," zei ze zelfverzekerd. "Als ik een appel laat vallen, denk ik dat hij gewoon besluit naar beneden te gaan. Het is niet iets wat door een of andere onzichtbare kracht gebeurt."
+                
+                De interviewer, zichtbaar verrast door haar verklaring, probeerde uit te leggen hoe zwaartekracht werkt, maar Yolanthe bleef bij haar standpunt. "Wetenschap is soms zo beperkend," vervolgde ze. "Ik geloof in de kracht van wilskracht en dat alles wat we zien een keuze is van de objecten zelf."
+                
+                Binnen enkele uren nadat het interview werd uitgezonden, ontplofte Twitter met reacties. Onder de hashtag #YolantheZwaartekracht deelden mensen talloze grappen en memes. Een populaire meme toonde een appel die een protestbord vasthoudt met de tekst: "Ik val omdat ik dat wil!"
+                
+                "Ik heb hier zo om gelachen," schreef een Twitter-gebruiker. "Misschien kunnen we volgende week leren hoe vuur werkt volgens Yolanthe."
+                
+                Natuurkundigen en wetenschappers werden ook gevraagd om hun mening te geven. "Hoewel ik Yolanthe's creativiteit waardeer, is zwaartekracht een fundamentele kracht van de natuur," zei een vooraanstaand natuurkundige. "Het is niet iets waar we omheen kunnen, hoe graag we dat ook willen."
+                
+                Ondanks de ophef lijkt Yolanthe zelf niet van haar stuk gebracht. "Iedereen heeft recht op zijn eigen mening," reageerde ze op de kritiek. "Ik moedig mensen aan om zelf na te denken en niet altijd alles voor waar aan te nemen."
+                
+                Of haar opmerkingen een impact zullen hebben op haar carrière valt nog te bezien. Voor nu blijft Yolanthe Cabau in de schijnwerpers, zij het op een onverwachte manier.</p>
+            <div class="social-buttons">
+                <button onclick="likeArticle()">Like (<span id="likeCount">0</span>)</button>
+                <button onclick="dislikeArticle()">Dislike (<span id="dislikeCount">0</span>)</button>
+                <button onclick="shareArticle()">Deel op Social Media</button>
+            </div>
+        </article>
+        <section class="comments">
+            <h3>Reacties</h3>
+            <form id="commentForm" onsubmit="addComment(event)">
+                <input type="text" id="commentInput" placeholder="Schrijf een reactie..." required>
+                <button type="submit">Plaatsen</button>
+            </form>
+            <ul id="commentList">
+                <!-- Eerder geplaatste reacties -->
+                <li>Jan: "Dit kan niet serieus zijn!"</li>
+                <li>Marie: "Ongelooflijk, hoe komt hij erbij?"</li>
+                <li>Pieter: "Ik heb hier zo om gelachen!"</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fake News Today. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>

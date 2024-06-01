@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thierry Baudet en de Platte Aarde - Fake News Today</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="home-icon.png" alt="Home" class="home-icon"></a>
+        <h1>Fake News Today</h1>
+        <nav>
+            <ul>
+                <!-- Hier kunnen eventueel meer navigatielinks worden toegevoegd -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="artikel">
+            <h2>Marco van Basten Kiest voor Blootsvoets Voetbal</h2>
+            <img src="images/marco_def.jpeg" alt="Marco van Basten">
+            <p>In een verrassende aankondiging heeft de legendarische Nederlandse voetballer Marco van Basten bekendgemaakt dat hij voortaan alleen nog maar blootsvoets zal voetballen. Volgens Van Basten beperken voetbalschoenen de natuurlijke voetbewegingen en is blootsvoets spelen de toekomst van het voetbal.
+
+                Tijdens een persconferentie in het Johan Cruijff Arena onthulde Van Basten zijn nieuwe filosofie. "Voetbalschoenen zijn een overblijfsel van het verleden," verklaarde hij. "Onze voorouders speelden allemaal blootsvoets, en ze waren ongelooflijk behendig. Ik geloof dat we terug moeten naar die puurheid."
+                
+                De aankondiging leidde onmiddellijk tot een golf van reacties en spot op social media. Onder de hashtag #BarefootBasten deelden mensen foto's van Van Basten zonder schoenen, naast allerlei grappen over zijn nieuwe benadering.
+                
+                "Misschien krijgt hij nu een contract bij Flintstones FC," grapte een Twitter-gebruiker. "Ik kan niet wachten om hem te zien rennen over een veld vol stenen."
+                
+                Voetbalexperts waren verdeeld over Van Basten's nieuwe idee. "Hoewel ik de nostalgie begrijp, denk ik niet dat het praktisch is in het moderne spel," zei een voormalige teamgenoot. "De velden en de competitie zijn gewoon te intens."
+                
+                Fans van Van Basten stonden echter vierkant achter hem. "Marco is altijd een visionair geweest," zei een trouwe supporter. "Als iemand dit kan laten werken, is hij het wel."
+                
+                Van Basten zelf lijkt vastbesloten. "Ik weet dat het controversieel is, maar ik geloof echt dat dit de manier is waarop voetbal gespeeld moet worden," zei hij. "Ik nodig iedereen uit om het eens te proberen. Je voelt je meer verbonden met het spel en het gras."
+                
+                De komende weken zal Van Basten enkele demonstraties geven om zijn theorie te bewijzen. Of hij anderen kan overtuigen van de voordelen van blootsvoets voetbal, zal nog moeten blijken. Eén ding is zeker: Marco van Basten weet hoe hij de aandacht moet trekken.</p>
+            <div class="social-buttons">
+                <button onclick="likeArticle()">Like (<span id="likeCount">0</span>)</button>
+                <button onclick="dislikeArticle()">Dislike (<span id="dislikeCount">0</span>)</button>
+                <button onclick="shareArticle()">Deel op Social Media</button>
+            </div>
+        </article>
+        <section class="comments">
+            <h3>Reacties</h3>
+            <form id="commentForm" onsubmit="addComment(event)">
+                <input type="text" id="commentInput" placeholder="Schrijf een reactie..." required>
+                <button type="submit">Plaatsen</button>
+            </form>
+            <ul id="commentList">
+                <!-- Eerder geplaatste reacties -->
+                <li>Jan: "Dit kan niet serieus zijn!"</li>
+                <li>Marie: "Ongelooflijk, hoe komt hij erbij?"</li>
+                <li>Pieter: "Ik heb hier zo om gelachen!"</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fake News Today. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>
